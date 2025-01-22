@@ -15,13 +15,11 @@ const registerServices = {
         password
       );
 
-      const newUser = {
+      await set(ref(firebaseApp.database(), `users/${user.uid}`), {
         id: user?.uid,
         username: username,
         email: email,
-      };
-
-      await set(ref(firebaseApp.database(), `users/${user.uid}`), newUser);
+      });
       await updateProfile(user, { displayName: username });
       console.log("dados cadastrado!");
     } catch (error) {
