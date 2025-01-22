@@ -1,0 +1,33 @@
+.button {
+  background-color: var(--purple);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s ease-in;
+}
+
+.button:hover {
+  background-color: var(--coral);
+}
+
+.button:active {
+  transform: translateY(2px);
+}
+
+.buttonDisabled,
+.button:disabled {
+  background-color: #ccc;
+  color: var(--dark-blue);
+  font-family: var(--font);
+  font-weight: 600;
+  cursor: not-allowed;
+  transform: translateY(0px);
+}

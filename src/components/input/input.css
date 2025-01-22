@@ -1,0 +1,40 @@
+:root {
+  --input-bg: #3e5879;
+  --input-placeholder: #f5f7f8;
+}
+
+.formGroup {
+  display: flex;
+  background-color: var(--input-bg);
+  border-radius: 10px;
+  height: 2.5rem;
+  padding-inline: 0.75rem;
+  gap: 0.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.formGroup input {
+  background: transparent;
+  outline: none;
+  border: none;
+  flex: 1;
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+.formGroup input::placeholder {
+  color: var(--input-placeholder);
+  font-family: var(--font);
+  font-weight: 400;
+}
+
+.inputHelperText {
+  padding-left: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--input-placeholder);
+}
+
+.inputHelperTextError {
+  color: var(--red);
+}

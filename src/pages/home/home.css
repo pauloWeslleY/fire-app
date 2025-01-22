@@ -1,0 +1,132 @@
+.taskAdminContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: min(90%, 700px);
+  padding-inline: 5rem;
+  margin-top: 2rem;
+}
+
+.taskAdminContainer h2 {
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 1.1rem;
+  font-weight: 600;
+  font-size: 2.1rem;
+  color: var(--coral);
+}
+
+.formTaskContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.formControl {
+  display: flex;
+  background-color: var(--input-bg);
+  border-radius: 10px;
+  padding: 0.5rem;
+  gap: 0.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.formControl textarea {
+  background-color: transparent;
+  resize: none;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 1.5rem;
+  font-family: var(--font);
+  letter-spacing: 1.2px;
+  color: var(--white);
+}
+
+.formControl textarea::placeholder {
+  color: var(--input-placeholder);
+  font-family: var(--font);
+  font-weight: 400;
+}
+
+.buttonTask {
+  width: 100%;
+}
+
+.taskWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-block: 35px;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid var(--purple);
+  outline: 1px solid var(--coral);
+  background-color: #111529;
+  border-radius: 10px;
+  padding: 0.55rem;
+}
+
+.task .taskActions {
+  display: flex;
+  flex-direction: row;
+  gap: 0.35rem;
+}
+
+.buttonTaskActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 80px;
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: none;
+  border-radius: 10px;
+}
+
+.task .taskActions .buttonTaskUpdate {
+  background-color: var(--light-pink);
+  color: var(--dark-blue);
+  border: none;
+  transition: background 0.2s ease;
+}
+
+.task .taskActions .buttonTaskUpdate:hover {
+  background-color: var(--purple);
+}
+
+.task .taskActions .buttonTaskDelete {
+  background-color: transparent;
+  color: var(--yellow);
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.task .taskActions .buttonTaskDelete:hover {
+  color: var(--yellow-200);
+}
+
+.buttonLogout {
+  align-items: center;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 6%;
+  left: 4%;
+  background-color: var(--white);
+  color: var(--purple);
+  height: 60px;
+  width: 60px;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.buttonLogout:hover {
+  transform: translateY(-5px) scale(1.1);
+}
